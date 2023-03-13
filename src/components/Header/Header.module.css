@@ -1,0 +1,85 @@
+.menu {
+  text-align: center;
+  margin: 0 5em;
+}
+
+.menu h1 {
+  font-size: 50px;
+  border-bottom: 2px solid #dadada;
+  padding-bottom: .2em;
+}
+
+.languageAndData {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 2em 0 1em 0;
+}
+
+.languageAndData ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.languageAndData li {
+  margin-right: 1em;
+  opacity: 1;
+  transition: .4s;
+}
+
+.languageAndData li:hover {
+  opacity: .8;
+}
+
+.language a {
+  text-decoration: underline !important;
+  opacity: .8;
+}
+
+.listMenu ul,
+.listMobile ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-bottom: 3px double #000;
+}
+
+.listMenu li,
+.listMobile li {
+  margin-right: .5em;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 1.5em 0;
+  opacity: 1;
+  transition: .4s;
+}
+
+.listMenu li:hover,
+.listMobile li:hover {
+  opacity: .8;
+}
+
+.listMenu i,
+.listMobile i {
+  font-size: 14px;
+}
+
+.listMobile {
+  display: none;
+}
+
+@media (max-width:760px) {
+  .menu {
+    margin: 1em;
+  }
+
+  .listMenu {
+    display: none;
+  }
+
+  .listMobile {
+    display: block;
+  }
+}

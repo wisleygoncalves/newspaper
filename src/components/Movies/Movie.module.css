@@ -1,0 +1,55 @@
+.movieContainer {
+  margin: 2em;
+  border-bottom: 3px double #000;
+  padding-bottom: 2em;
+}
+
+.movieContainer h3 {
+  margin-left: 1.5em;
+}
+
+.movieRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 2em;
+}
+
+.itemMovie {
+  width: 24.5%;
+  margin: 1em 0;
+  opacity: 1;
+}
+
+.itemMovie:hover {
+  opacity: .8;
+}
+
+.itemMovie img {
+  width: 100%;
+}
+
+.itemMovie h6 {
+  font-size: 10px;
+  font-style: italic;
+}
+
+@media (max-width:760px) {
+  .movieContainer {
+    margin: 1em;
+  }
+
+  .movieContainer h3 {
+    margin-left: 0;
+  }
+  
+  .movieRow {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .itemMovie {
+    width: 100%;
+  }
+}
